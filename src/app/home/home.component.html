@@ -1,0 +1,20 @@
+<div class="container" *ngIf="isValid">
+ 
+ <table class="table table-striped">
+    <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let product of products'>
+        <td><a routerLink="/app-details" routerLinkActive="active">{{product.name}}</a></td>
+        <td>{{product.type}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div>
+  <p>Product does not exist</p>
+</div>

@@ -1,0 +1,24 @@
+
+	[
+	{
+		"id": "1",
+		"name": "Ponni Rice",
+		"type": "rice",
+		"description": "Ponni rice can be found in tamil nadu",
+		"price":200
+	},
+	{
+		"id": "2",
+		"name": "Pusa",
+		"type": "rice",
+		"description": "Pusa rice can be found in Punjab,Haryana",
+		"price":400
+	},
+	{
+		"id": "3",
+		"name": "Parmal",
+		"type": "rice",
+		"description": "Parmal rice can be found in north india",
+		"price":500
+	}
+]

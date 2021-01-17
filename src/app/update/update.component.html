@@ -1,0 +1,42 @@
+<!--<form #checkoutForm="ngForm" (ngSubmit)="onSubmit(checkoutForm.value)" >
+    <table><tr><td> Id :-</td><td><input type="text" name="id" value={{products.id}} ngModel></td></tr>
+      <tr><td>Name :-</td><td><input type="text" name="name" value={{products.name}} ngModel></td></tr>
+      <tr><td>Type :-</td><td><input type="text" name="type" value={{products.type}} ngModel></td></tr>
+      <tr><td>Price :-</td><td><input type="text" name="price" value={{products.price}} ngModel></td></tr>
+      <tr><td>Description :-</td><td><input type="text" name="description" value={{products.description}} ngModel></td></tr>
+      <tr><td><button type="submit">OK</button></td></tr>
+    
+    </table>
+ 
+  </form>-->
+  <div class="col-md-6 user-container">
+    <h2 class="text-center">Edit User</h2>
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+      <div class="hidden">
+        <input type="text" formControlName="id" placeholder="id" name="id" class="form-control" id="id">
+      </div>
+      <div class="form-group">
+        <label for="name">name:</label>
+        <input type="text" formControlName="name" placeholder="name" name="name" class="form-control" id="name" readonly="true">
+      </div>
+  
+      <div class="form-group">
+        <label for="type">type:</label>
+        <input formControlName="type" placeholder="type" name="type" class="form-control" id="type">
+      </div>
+  
+      <div class="form-group">
+        <label for="price">price:</label>
+        <input formControlName="price" placeholder="price" name="price" class="form-control" id="price">
+      </div>
+  
+      <div class="form-group">
+        <label for="description">description:</label>
+        <input type="text" formControlName="description" placeholder="description" name="description" class="form-control" id="description">
+      </div>
+  
+
+      <button class="btn btn-success">Update</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,29 @@
+<p>cart works!</p>
+<p>Items in the cart</p>
+<h5>{{products.length}}</h5>
+<h5>Total:<h5>
+<div class="container">
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Description</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let product of products'>
+            <td>{{product.id}}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.type }}</td>
+          <td>{{product.price}}</td>
+          <td>{{product.description}}</td>
+        </tr>
+        <tr>
+          <td><button><a routerLink="/app-checkout">Checkout</a></button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

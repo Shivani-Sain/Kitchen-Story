@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "Kitchen-Story"
+  "defaultProject": "Kitchen-Story",
+  "cli": {
+    "analytics": "5a2c1765-d42c-4604-9d25-011b50cccd2a"
+  }
 }

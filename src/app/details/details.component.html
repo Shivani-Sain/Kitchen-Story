@@ -1,0 +1,27 @@
+<h1>Details page</h1>
+<div class="container">
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Description</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let product of products'>
+            <td>{{product.id}}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.type }}</td>
+          <td>{{product.price}}</td>
+          <td>{{product.description}}</td>
+          <td><button><a [routerLink]="['/app-update/', product.id]" routerLinkActive="active">Edit</a></button></td>
+          <td><button><a routerLink="/app-create" routerLinkActive="active">Create</a></button></td>
+          <td><button><a [routerLink]="['/app-delete/', product.id]" routerLinkActive="active">Delete</a></button></td>
+          <td><button><a [routerLink]="['/app-cart/', product.id]" routerLinkActive="active">Add to Cart</a></button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
