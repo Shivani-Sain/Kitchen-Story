@@ -17,15 +17,23 @@ export class CartService {
     console.log(this.total);
   }
   getProduct(){
-    alert(this.item);
     console.log(this.item);
     return this.item;
   }
   clearCart(){
     this.item = [];
+    this.total=0;
   }
   getTotal(){
     console.log("this is total"+this.total);
     return this.total;
+  }
+  deleteFromCart(id:any){
+    let index = this.item.findIndex((x: { id: string; }) => x.id ===id);
+    this.total = this.getTotal()-this.item[index].price;
+    //  delete this.products[index];
+    this.item.splice(index, 1);
+    return this.total;
+
   }
 }

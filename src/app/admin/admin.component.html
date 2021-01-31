@@ -1,0 +1,15 @@
+<form class = ""  (ngSubmit)="submit()">
+    <div class="container">
+    <table>
+        <tr><td>Login Details</td></tr>
+        <!--<tr><td><div *ngIf="error">
+            <span style="color: red;">Please enter valid credentials</span>
+        </div></td></tr>-->
+        <tr> <td> Username :-</td><td><input type="email" class="form-control" name="id" [(ngModel)]="email"></td></tr>
+      <tr><td>Password :-</td><td><input type="password" class="form-control" name="name" [(ngModel)]="password"></td></tr>
+      <tr><td><button type="submit" class="btn btn-primary">Login</button></td></tr>
+      <tr><td>Change password</td><td><a routerLink='/app-changepassword' routerLinkActive="active">Click Here</a></td></tr>
+  </table>
+</div>
+  </form>
+  

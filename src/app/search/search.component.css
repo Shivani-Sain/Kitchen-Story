@@ -1,0 +1,13 @@
+#top{
+    padding-top: 1%;
+    background-color: gray;
+    padding-bottom: 1%;
+}
+input[type="text"]{
+    width: 20%;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+tbody {
+    width: 100%;
+}

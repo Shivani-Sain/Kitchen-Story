@@ -4,11 +4,11 @@ import * as productData from '../assets/product.json';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ProductServiceService {
   products:any = (productData as any).default;
   constructor() { }
   getProduct(){
-    alert(this.products);
     return this.products;
   }
   addProduct(value:any){

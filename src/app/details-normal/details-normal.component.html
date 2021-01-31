@@ -1,0 +1,27 @@
+<h1 style="text-align: center;">Details page</h1>
+<div class="container" *ngIf=isValid>
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Price per kg</th>
+            <th>Description</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>{{products.id}}</td>
+          <td>{{ products.name }}</td>
+          <td>{{ products.type }}</td>
+          <td>{{products.price}}</td>
+          <td>{{products.description}}</td>
+          <td><button type="button" class="btn btn-primary" (click)="addToCart(products.id)">Add to Cart</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf=!isValid>
+    <h3 style="text-align: center;">Product does not exist</h3>
+  </div>

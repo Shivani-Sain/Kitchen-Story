@@ -16,7 +16,6 @@ export class UpdateComponent implements OnInit {
   editForm: FormGroup;
   constructor(private formBuilder: FormBuilder,private route: ActivatedRoute,public productService:ProductServiceService) {
     this.id = this.route.snapshot.params['id'];
-    alert(this.id);
     this.products=this.productService.getSingleProduct(this.id); 
 
 //  onSubmit(value: any) {
@@ -40,6 +39,7 @@ export class UpdateComponent implements OnInit {
   }
   onSubmit() {
     this.productService.updateProduct(this.editForm.value);
+    alert("Updated product successfully");
   }
 
  

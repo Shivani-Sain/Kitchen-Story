@@ -1,10 +1,13 @@
 <form #productForm="ngForm" (ngSubmit)="onSubmit(productForm.value)">
-  <table><tr> <td> Id :-</td><td><input type="text" class="form-control" name="id" ngModel></td></tr>
+ <div class="container">
+  <table>
+    <tr><td>Create Product</td></tr>
+    <tr> <td> Id :-</td><td><input type="text" class="form-control" name="id" ngModel></td></tr>
     <tr><td>Name :-</td><td><input type="text" class="form-control" name="name" ngModel></td></tr>
     <tr><td>Type :-</td><td><input type="text" class="form-control" name="type" ngModel></td></tr>
-    <tr><td>Price :-</td><td><input type="text" class="form-control" name="price" ngModel></td></tr>
+    <tr><td>Price per kg:-</td><td><input type="text" class="form-control" name="price" ngModel></td></tr>
     <tr><td>Description :-</td><td><input type="text" class="form-control" name="description" ngModel></td></tr>
-    <tr><td><button type="submit">OK</button></td></tr>
+    <tr><td><button type="submit" class="btn btn-success">OK</button></td></tr>
 </table>
+</div>
 </form>
-<a routerLink="/app-home" routerLinkActive="active">Home</a>

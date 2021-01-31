@@ -2,23 +2,276 @@
 	[
 	{
 		"id": "1",
-		"name": "Ponni Rice",
-		"type": "rice",
-		"description": "Ponni rice can be found in tamil nadu",
-		"price":200
+		"name": "Potato",
+		"type": "vegetable",
+		"description": "Potato (type Vegetable)",
+		"price":50
 	},
 	{
 		"id": "2",
-		"name": "Pusa",
-		"type": "rice",
-		"description": "Pusa rice can be found in Punjab,Haryana",
-		"price":400
+		"name": "Tomato",
+		"type": "vegetable",
+		"description": "Tomato(type vegetable)",
+		"price":50
 	},
 	{
 		"id": "3",
-		"name": "Parmal",
-		"type": "rice",
-		"description": "Parmal rice can be found in north india",
-		"price":500
+		"name": "Cauliflower",
+		"type": "vegetable",
+		"description": "Cauliflower(type vegetable)",
+		"price":30
+	},
+	{
+		"id": "4",
+		"name": "Carrot",
+		"type": "vegetable",
+		"description": "Carrot(type vegetable)",
+		"price":40
+	},
+	{
+		"id": "5",
+		"name": "Capsicum",
+		"type": "vegetable",
+		"description": "Capsicum(type vegetable)",
+		"price":50
+	},
+	{
+		"id": "6",
+		"name": "Onion",
+		"type": "vegetable",
+		"description": "Onion(type vegetable)",
+		"price":30
+	},
+	{
+		"id": "7",
+		"name": "Pumpkin",
+		"type": "vegetable",
+		"description": "Pumpkin(type vegetable)",
+		"price":60
+	},
+	
+	{
+		"id": "8",
+		"name": "Cabbage",
+		"type": "vegetable",
+		"description": "Cabbage(type vegetable)",
+		"price":70
+	},
+	{
+		"id": "9",
+		"name": "Garlic",
+		"type": "vegetable",
+		"description": "Garlic(type vegetable)",
+		"price":30
+	},
+	{
+		"id": "10",
+		"name": "Ginger",
+		"type": "vegetable",
+		"description": "Ginger(type vegetable)",
+		"price":20
+	},
+	{
+		"id": "11",
+		"name": "Apple",
+		"type": "fruits",
+		"description": "Apple(type fruits)",
+		"price":100
+	},
+	{
+		"id": "12",
+		"name": "Orange",
+		"type": "fruits",
+		"description": "Orange(type fruits)",
+		"price":60
+	},
+	{
+		"id": "13",
+		"name": "Banana",
+		"type": "fruits",
+		"description": "Banana(type fruits)",
+		"price":30
+	},
+	{
+		"id": "14",
+		"name": "Dates",
+		"type": "fruits",
+		"description": "Dates(type fruits)",
+		"price":70
+	},
+	{
+		"id": "15",
+		"name": "Grapes",
+		"type": "fruits",
+		"description": "Grapes(type fruits)",
+		"price":100
+	},
+	{
+		"id": "16",
+		"name": "Pears",
+		"type": "fruits",
+		"description": "Pears(type fruits)",
+		"price":70
+	},
+	{
+		"id": "17",
+		"name": "Malon",
+		"type": "fruits",
+		"description": "Malon(type fruits)",
+		"price":40
+	},
+	{
+		"id": "18",
+		"name": "Water-Malon",
+		"type": "fruits",
+		"description": "Water-Malon(type fruits)",
+		"price":60
+	},
+	{
+		"id": "19",
+		"name": "Barley",
+		"type": "grains",
+		"description": "Barley(type grains)",
+		"price":70
+	},
+	{
+		"id": "20",
+		"name": "Brown rice",
+		"type": "grains",
+		"description": "Brown rice(type grains)",
+		"price":80
+	},
+	{
+		"id": "21",
+		"name": "Buckwheat",
+		"type": "grains",
+		"description": "Buckwheat(type grains)",
+		"price":100
+	},
+	{
+		"id": "22",
+		"name": "Bulgur",
+		"type": "grains",
+		"description": "Bulgur(type grains)",
+		"price":80
+	},
+	{
+		"id": "23",
+		"name": "Millet",
+		"type": "grains",
+		"description": "Millet(type grains)",
+		"price":80
+	},
+	{
+		"id": "24",
+		"name": "Oatmeal",
+		"type": "grains",
+		"description": "Oatmeal(type grains)",
+		"price":80
+	},
+	{
+		"id": "25",
+		"name": "Popcorn",
+		"type": "grains",
+		"description": "Popcorn(type grains)",
+		"price":80
+	},
+	{
+		"id": "26",
+		"name": "Whole-wheat bread",
+		"type": "grains",
+		"description": "Whole-wheat bread(type grains)",
+		"price":80
+	},
+	{
+		"id": "27",
+		"name": "Pasta",
+		"type": "grains",
+		"description": "Pasta(type grains)",
+		"price":80
+	},
+	{
+		"id": "28",
+		"name": "Crackers",
+		"type": "grains",
+		"description": "Crackers(type grains)",
+		"price":80
+	},
+	{
+		"id": "29",
+		"name": "Chicken",
+		"type": "meat",
+		"description": "Chicken(type meat)",
+		"price":80
+	},
+	{
+		"id": "30",
+		"name": "Turkey",
+		"type": "meat",
+		"description": "Turkey(type meat)",
+		"price":80
+	},
+	{
+		"id": "31",
+		"name": "Beef",
+		"type": "meat",
+		"description": "Beef(type meat)",
+		"price":80
+	},
+	{
+		"id": "32",
+		"name": "Pork",
+		"type": "meat",
+		"description": "Pork(type meat)",
+		"price":80
+	},
+	{
+		"id": "33",
+		"name": "Butter",
+		"type": "dairy food",
+		"description": "Butter(type dairy food)",
+		"price":80
+	},
+	{
+		"id": "34",
+		"name": "Milk",
+		"type": "dairy food",
+		"description": "Milk(type dairy food)",
+		"price":80
+	},
+	{
+		"id": "35",
+		"name": "Cheese",
+		"type": "dairy food",
+		"description": "Cheese(type dairy food)",
+		"price":80
+	},
+	{
+		"id": "36",
+		"name": "Yogurt",
+		"type": "dairy food",
+		"description": "Yogurt(type dairy food)",
+		"price":80
+	},
+	{
+		"id": "37",
+		"name": "Ice-Cream",
+		"type": "dairy food",
+		"description": "Ice-Cream(type dairy food)",
+		"price":80
+	},
+	{
+		"id": "38",
+		"name": "Milk-Powder",
+		"type": "dairy food",
+		"description": "Milk-Powder(type dairy food)",
+		"price":80
+	},
+	{
+		"id": "39",
+		"name": "Egg",
+		"type": "egg",
+		"description": "Egg(type Egg)",
+		"price":80
 	}
 ]

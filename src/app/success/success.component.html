@@ -1,1 +1,27 @@
-<p>success works!</p>
+<h3 style="text-align: center;">Order has been succsessfully placed</h3>
+<p style="margin-left: 20%;color: blue;">Total Items:- {{products.length}}</p>
+<div class="container">
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Description</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let product of products'>
+            <td>{{product.id}}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.type }}</td>
+          <td>{{product.price}}</td>
+          <td>{{product.description}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <h5 style="color: blue;">Total:- {{total}}</h5>
+  </div>
+
+

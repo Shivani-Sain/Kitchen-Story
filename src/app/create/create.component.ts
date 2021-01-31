@@ -18,6 +18,7 @@ export class CreateComponent implements OnInit {
   products:any = (productData as any).default;
   onSubmit(value: any) {
     this.productService.addProduct(value);
+    alert("Product created successfully");
     //console.log(value);
     //this.products.push(value);
     //console.log(this.products);

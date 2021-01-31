@@ -1,15 +1,12 @@
-<p>cart works!</p>
-<p>Items in the cart</p>
-<h5>{{products.length}}</h5>
-<h5>Total:<h5>
-<div class="container">
-    <table class="table table-striped">
+<p style="margin-left: 20%;color: blue;">Items in the cart:- {{products.length}}</p>
+<div class="container" *ngIf=isValid>
+    <table class="table">
       <thead>
           <tr>
             <th>ID</th>
             <th>Name</th>
             <th>Type</th>
-            <th>Price</th>
+            <th>Price per kg</th>
             <th>Description</th>
           </tr>
       </thead>
@@ -20,10 +17,15 @@
           <td>{{ product.type }}</td>
           <td>{{product.price}}</td>
           <td>{{product.description}}</td>
+          <td><button type="button" class="btn btn-primary" (click)="deleteFromCart(product.id)">Delete</button></td>
         </tr>
         <tr>
-          <td><button><a routerLink="/app-checkout">Checkout</a></button></td>
+          <td><button type="button" class="btn btn-primary"><a routerLink="/app-login" style="color: white;">Checkout</a></button></td>
         </tr>
       </tbody>
     </table>
+    <h5 style="color: blue;">Total:- {{total}}</h5>
+  </div>
+  <div *ngIf=!isValid>
+    <span style="margin-left: 20%;color: blue;">Cart is empty</span>
   </div>

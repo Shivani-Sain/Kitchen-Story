@@ -1,0 +1,18 @@
+<div class="form-group" id="top">
+    <input class="form-control" type="text"
+     placeholder="Search By Type" aria-label="Search" [(ngModel)]="searchTerm"/>
+</div>
+<table class="table table-striped">
+<div *ngFor = "let product of products|SearchpipePipe:searchTerm" class="container">
+        <tbody>
+          <tr>
+              <td>{{product.id}}</td>
+            <td style="height:100px;width:200px"><a [routerLink]="['/app-details-normal/', product.id]" routerLinkActive="active">{{ product.name }}</a></td>
+            <td style="height:100px;width:200px">{{ product.type }}</td>
+            <td style="height:100px;width:200px">{{product.price}}/per kg</td>
+            <td style="height:100px;width:200px">{{product.description}}</td>
+            <td><button type="button" class="btn btn-primary" (click)="addToCart(product.id)">Add to Cart</button></td>
+          </tr>
+        </tbody>
+      </div>
+    </table>

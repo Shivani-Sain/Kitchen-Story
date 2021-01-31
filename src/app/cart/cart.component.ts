@@ -11,14 +11,17 @@ import { CartService } from '../cart.service';
 export class CartComponent implements OnInit {
   id: any;
   products:any;
-  constructor(private formBuilder: FormBuilder,private route: ActivatedRoute,productService:ProductServiceService,cartService :CartService) {
-    this.id = this.route.snapshot.params['id'];
-    this.products = productService.getSingleProduct(this.id);
-
-    console.log(this.products);
-    cartService.addProduct(this.products);
+  total :number;
+  isValid = false;
+  constructor(private formBuilder: FormBuilder,private route: ActivatedRoute,productService:ProductServiceService,public cartService :CartService,public router:Router) {
     this.products = cartService.getProduct();
+    this.total= cartService.getTotal();
+    this.isValid = cartService.getProduct().length>0;
    }
+   deleteFromCart(id:any){
+    this.total = this.cartService.deleteFromCart(id);
+    alert("item deleted successfully");
+  }
   ngOnInit(): void {
   }
 

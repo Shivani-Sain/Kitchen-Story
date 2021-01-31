@@ -1,20 +1,15 @@
-<div class="container" *ngIf="isValid">
+<div class="container" *ngIf=isValid>
  
- <table class="table table-striped">
-    <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-        </tr>
-    </thead>
+ <table class="table table-striped" id="table">
     <tbody>
       <tr *ngFor='let product of products'>
-        <td><a routerLink="/app-details" routerLinkActive="active">{{product.name}}</a></td>
+        <td><a [routerLink]="['/app-details-normal/', product.id]" routerLinkActive="active">{{product.name}}</a></td>
         <td>{{product.type}}</td>
+        <td><button type="button" class="btn btn-primary" (click)="addToCart(product.id)">Add to Cart</button></td>
       </tr>
     </tbody>
   </table>
 </div>
-<div>
+<div *ngIf=!isValid>
   <p>Product does not exist</p>
 </div>

@@ -15,4 +15,9 @@ export class DetailsComponent implements OnInit {
   ngOnInit(): void {
   }
   products=this.productService.getProduct();
+  isValid = this.productService.productsCountCheck();
+  deleteFromItem(id:any){
+    this.productService.deleteProduct(id);
+    alert("product deleted successfully");
+  }
 }

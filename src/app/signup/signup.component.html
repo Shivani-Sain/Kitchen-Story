@@ -1,0 +1,11 @@
+<div class="container">
+<form #productForm="ngForm" (ngSubmit)="onSubmit(productForm.value)">
+    <table>
+        <tr><td>Enter Details Here</td></tr>
+        <tr> <td> Username :-</td><td><input type="text" class="form-control" name="name" ngModel required></td></tr>
+        <tr> <td> Email :-</td><td><input type="email" class="form-control" name="email" ngModel required></td></tr>
+        <tr><td>Password :-</td><td><input type="password" class="form-control" name="password" ngModel required></td></tr>
+      <tr><td><button type="submit" class="btn btn-primary">Signup</button></td></tr>
+  </table>
+  </form>
+</div>

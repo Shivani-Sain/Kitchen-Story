@@ -1,0 +1,14 @@
+<div class="container">
+<form #productForm="ngForm" (ngSubmit)="onSubmit(productForm.value)">
+    <table>
+        <tr><td>Login Details</td></tr>
+        <tr><td><div *ngIf="error">
+            <span style="color: red;">Please enter valid credentials</span>
+        </div></td></tr>
+        <tr> <td> Username :-</td><td><input type="email" class="form-control" name="email" ngModel required></td></tr>
+      <tr><td>Password :-</td><td><input type="password"  class="form-control" name="password" ngModel required></td></tr>
+      <tr><td><button type="submit" class="btn btn-primary">Login</button></td></tr>
+      <tr><td>New User SignUp here</td><td><a routerLink="/app-signup" routerLinkActive="active">Sign up</a></td></tr>
+  </table>
+  </form>
+</div>

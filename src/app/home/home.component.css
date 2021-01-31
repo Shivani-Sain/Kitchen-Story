@@ -1,3 +1,6 @@
 .container .table-striped{
-    border: 1px solid back;
+    padding: 10%;
+}
+.container{
+    padding-top: 10%;
 }

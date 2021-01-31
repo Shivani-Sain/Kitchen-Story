@@ -1,12 +1,12 @@
-<h1>Details page</h1>
-<div class="container">
+<h3 style="text-align: center;">Details page</h3>
+<div class="container" *ngIf=isValid>
     <table class="table table-striped">
       <thead>
           <tr>
             <th>ID</th>
             <th>Name</th>
             <th>Type</th>
-            <th>Price</th>
+            <th>Price Per Kg</th>
             <th>Description</th>
           </tr>
       </thead>
@@ -17,11 +17,13 @@
           <td>{{ product.type }}</td>
           <td>{{product.price}}</td>
           <td>{{product.description}}</td>
-          <td><button><a [routerLink]="['/app-update/', product.id]" routerLinkActive="active">Edit</a></button></td>
-          <td><button><a routerLink="/app-create" routerLinkActive="active">Create</a></button></td>
-          <td><button><a [routerLink]="['/app-delete/', product.id]" routerLinkActive="active">Delete</a></button></td>
-          <td><button><a [routerLink]="['/app-cart/', product.id]" routerLinkActive="active">Add to Cart</a></button></td>
+          <td><button type="button" class="btn btn-primary"><a [routerLink]="['/app-update/', product.id]" routerLinkActive="active" style="color: white;">Edit</a></button></td>
+          <td><button type="button" class="btn btn-primary"><a routerLink="/app-create" routerLinkActive="active" style="color: white;">Create</a></button></td>
+          <td><button type="button" class="btn btn-primary" (click)="deleteFromItem(product.id)">Delete</button></td>
         </tr>
       </tbody>
     </table>
+  </div>
+  <div *ngIf=!isValid>
+    <p>Product does not exist</p>
   </div>

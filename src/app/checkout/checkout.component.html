@@ -1,6 +1,9 @@
-<p>checkout works!</p>
+
 <form>
+<div class="container">
     <table>
+        <tr><td>Enter Payment Details here</td></tr>
+
         <tr>
             <td>Card Number:-</td>
             <td><input type="number"></td>
@@ -11,11 +14,12 @@
         </tr>
         <tr>
             <td>CVV:-</td>
-            <td><input type="number"></td>
+            <td><input type="password"></td>
         </tr>
         
         <tr aria-colspan="2">
-            <td><button><a routerLink="/app-success">Submit</a></button></td>
+            <td><button type ="button" class="btn btn-primary"><a routerLink="/app-success" style="color: white;">Submit</a></button></td>
         </tr>
     </table>
+</div>
 </form>
